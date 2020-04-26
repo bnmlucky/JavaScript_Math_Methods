@@ -26,8 +26,10 @@ var message = "<h1>Math with the numbers " + num1 + " and " + num2 + "</h1>";
 // 7. Add another string to the message variable. 
 //    The string should look something like this after concatenation:
 //    "3 + 4 = 7"
+message += num1 + " + " + num2 + " = " + (num1 + num2);
 
 // 8. Add a linebreak tag -- <br> -- to the message variable
+message += "<br>";
 
 // 9. Continue to add to the message variable to include strings
 //    demonstrating multiplication, division and subtraction
@@ -36,10 +38,17 @@ var message = "<h1>Math with the numbers " + num1 + " and " + num2 + "</h1>";
 //    "3 / 4 = 0.75"
 //    "3 - 4 = -1"
 
+message += num1 + " * " + num2 + " = " + (num1 * num2);
+message += "<br>";
+message += num1 + " / " + num2 + " = " + (num1 / num2);
+message += "<br>";
+message += num1 + " - " + num2 + " = " + (num1 - num2);
+
+
 // 10. Use the document.write() method to print the message variable 
 //     to the web page. Open the finished.png file in this workspace
 //     to see what the completed output should look like
-
+document.write(message);
 
 
 
